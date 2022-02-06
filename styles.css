@@ -1,0 +1,60 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    --color1: #760CED;
+    --color2: #BC0CF7;
+    --color3: #E000D8;
+    --color4: #F70C7A;
+    --color5: #ED0E0C;
+}
+
+body{
+    background-attachment: fixed;
+    background-image: linear-gradient(var(--color1), black);
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh;
+    row-gap: 2vh;
+    font-family: Consolas, sans-serif;
+}
+
+header > h1, header > h2{
+    text-shadow: 1px 1px 2px var(--color3);
+}
+
+header > input{
+    height: 2em;
+    text-align: center;
+    outline: none;
+    box-shadow: 1px 1px 10px var(--color2);
+}
+
+header > input:focus{
+    transition: 0.5s;
+    transform: scale(1.2);
+
+    outline: 2px solid var(--color4);
+}
+
+header > p {
+
+    margin: 1em;
+    padding: 1em;
+
+    color: white;
+    text-transform: capitalize;
+    border: 2px solid var(--color2);
+    border-radius: 16px;
+    box-shadow: 1px 1px 5px black;
+}
+
+header > span {
+    color: white;
+}
